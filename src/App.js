@@ -21,6 +21,7 @@ function App() {
           <Route path="/Signin" component={Signin} exact />
           <Route path="/register" component={Register} exact /> */}
           </Switch>
+          <p>Feature Hello</p>
         </main>
       </div>
     </Router>
