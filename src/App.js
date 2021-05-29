@@ -21,6 +21,7 @@ function App() {
           <Route path="/Signin" component={Signin} exact />
           <Route path="/register" component={Register} exact /> */}
           </Switch>
+          <p>git test</p>
         </main>
       </div>
     </Router>
