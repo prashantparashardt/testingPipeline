@@ -1,17 +1,17 @@
-#  Name of workflow
 name: Production workflow
 
 # When workflow is triggered
 on:
-  push:
-    tags:
-      - "v*"
+  pull_request:
+    branches:
+      - main
 
 # Jobs to carry out
 jobs:
   deploy:
     # Operating system to run job on
     runs-on: ubuntu-latest
+
     # Steps in job
     steps:
       # Get code from repo
@@ -26,5 +26,3 @@ jobs:
       - run: npm install
       - run: npm run build --if-present
       - run: npm test
-      # Deploy to Netlify using our production secrets
-      -
