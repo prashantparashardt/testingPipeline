@@ -21,7 +21,7 @@ function App() {
           <Route path="/Signin" component={Signin} exact />
           <Route path="/register" component={Register} exact /> */}
           </Switch>
-          <p>Prashant</p>
+          <p>Hitesh</p>
         </main>
       </div>
     </Router>
